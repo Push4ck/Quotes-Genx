@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tilt+Neon&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Tilt Neon', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.lines-bg {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgb(46, 193, 151) 0%, rgb(0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@keyframes move {
+    to {
+        background-position: 20px 20px;
+    }
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(239, 224, 244, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(46, 193, 151);
+    margin-bottom: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #333;
+}
+
+.new-quote-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-quote-btn:hover {
+    background-color: rgb(46, 193, 151);
+    color: #000000;
+}
