@@ -21,7 +21,7 @@ body {
 .lines-bg {
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgb(46, 193, 151) 0%, rgb(0, 0, 0) 100%);
+    background: radial-gradient(circle, rgb(39, 214, 227) 50%, rgb(0, 0, 0) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +35,8 @@ body {
 }
 
 .container {
-    width: 500px;
+    height: fit-content;
+    width: 550px;
     padding: 20px;
     background-color: rgba(239, 224, 244, 0.9);
     border-radius: 10px;
@@ -45,16 +46,31 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: rgb(46, 193, 151);
+    color: rgb(204, 34, 216);
     margin-bottom: 20px;
     font-family: 'Pixelify Sans', sans-serif;
 }
 
 .quote-text {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 30px;
     font-family: 'Tilt Neon', sans-serif;
     color: #333;
+}
+
+.view-all-quote-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-all-quote-btn:hover {
+    background-color: rgb(204, 34, 216);
 }
 
 .new-quote-btn {
@@ -63,12 +79,11 @@ h1 {
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .new-quote-btn:hover {
-    background-color: rgb(46, 193, 151);
-    color: #000000;
+    background-color: rgb(204, 34, 216);
 }
