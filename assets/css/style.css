@@ -47,7 +47,8 @@ body {
     min-height: 110px;
 }
 
-.quote-box blockquote::before, .quote-box blockquote::after {
+.quote-box blockquote::before,
+.quote-box blockquote::after {
     content: '"';
 }
 
@@ -68,7 +69,7 @@ body {
     left: -30px;
 }
 
-.quote-box div{
+.quote-box div {
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -99,86 +100,147 @@ body {
     color: #333;
 }
 
-@media screen and (min-width: 340px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .quote-box {
-        background: #fff;
-        width: 300px;
-        align-items: center;
+        width: 250px;
         padding: 15px;
         top: 50%;
-        left: 48.3%;
+        left: 50%;
     }
-    
+
     .quote-box h2 {
-        font-size: 20px;
+        font-size: 12px;
+        margin-bottom: 30px;
     }
 
     .quote-box blockquote {
-        font-size: 17px;
+        font-size: 10px;
+        min-height: 30px;
+    }
+
+    .quote-box span {
+        font-size: 9px;
+    }
+
+    .quote-box button {
+        width: 80px;
+        height: 20px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .quote-box {
+        width: 300px;
+        padding: 15px;
+        top: 55%;
+        left: 50%;
+    }
+
+    .quote-box h2 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 12px;
+        min-height: 50px;
+    }
+
+    .quote-box span {
+        font-size: 9px;
+    }
+
+    .quote-box button {
+        width: 80px;
+        height: 20px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .quote-box {
+        width: 400px;
+        padding: 15px;
+        top: 63%;
+        left: 50%;
+    }
+
+    .quote-box h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 14px;
         min-height: 70px;
     }
+
     .quote-box span {
-        font-size: 14px;
+        font-size: 9px;
+    }
+
+    .quote-box button {
+        width: 90px;
+        height: 30px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .quote-box {
+        width: 500px;
+        padding: 15px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .quote-box h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 16px;
+        min-height: 70px;
+    }
+
+    .quote-box span {
+        font-size: 10px;
     }
 
     .quote-box button {
         width: 100px;
-        height: 30px;
+        height: 40px;
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (min-width: 1200px) {
     .quote-box {
-        background: #fff;
-        width: 500px;
-        align-items: center;
+        width: 800px;
         padding: 15px;
         top: 50%;
-        left: 48.3%;
+        left: 50%;
     }
-    
+
     .quote-box h2 {
         font-size: 24px;
+        margin-bottom: 30px;
     }
 
     .quote-box blockquote {
         font-size: 20px;
-        min-height: 70px;
+        min-height: 90px;
     }
+
     .quote-box span {
-        font-size: 18px;
+        font-size: 14x;
     }
 
     .quote-box button {
         width: 120px;
-        height: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .quote-box {
-        background: #fff;
-        width: 700px;
-        align-items: center;
-        padding: 15px;
-        top: 50%;
-        left: 48.3%;
-    }
-    
-    .quote-box h2 {
-        font-size: 26px;
-    }
-
-    .quote-box blockquote {
-        font-size: 22px;
-        min-height: 90px;
-    }
-    .quote-box span {
-        font-size: 20px;
-    }
-
-    .quote-box button {
-        width: 140px;
         height: 50px;
+        font-size: 14px;
     }
 }
