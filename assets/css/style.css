@@ -9,6 +9,7 @@
 
 body {
     background: #bbc6fa;
+    max-height: 100vh;
 }
 
 .quote-box {
@@ -102,67 +103,9 @@ body {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .quote-box {
-        width: 250px;
-        padding: 15px;
-        top: 50%;
-        left: 50%;
-    }
-
-    .quote-box h2 {
-        font-size: 12px;
-        margin-bottom: 30px;
-    }
-
-    .quote-box blockquote {
-        font-size: 10px;
-        min-height: 30px;
-    }
-
-    .quote-box span {
-        font-size: 9px;
-    }
-
-    .quote-box button {
-        width: 80px;
-        height: 20px;
-        font-size: 9px;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    .quote-box {
-        width: 300px;
-        padding: 15px;
-        top: 55%;
-        left: 50%;
-    }
-
-    .quote-box h2 {
-        font-size: 14px;
-        margin-bottom: 30px;
-    }
-
-    .quote-box blockquote {
-        font-size: 12px;
-        min-height: 50px;
-    }
-
-    .quote-box span {
-        font-size: 9px;
-    }
-
-    .quote-box button {
-        width: 80px;
-        height: 20px;
-        font-size: 9px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .quote-box {
         width: 400px;
         padding: 15px;
-        top: 63%;
+        top: 50%;
         left: 50%;
     }
 
@@ -173,25 +116,25 @@ body {
 
     .quote-box blockquote {
         font-size: 14px;
-        min-height: 70px;
+        min-height: 30px;
     }
 
     .quote-box span {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .quote-box button {
-        width: 90px;
+        width: 100px;
         height: 30px;
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
     .quote-box {
         width: 500px;
         padding: 15px;
-        top: 50%;
+        top: 55%;
         left: 50%;
     }
 
@@ -202,23 +145,52 @@ body {
 
     .quote-box blockquote {
         font-size: 16px;
-        min-height: 70px;
+        min-height: 50px;
     }
 
     .quote-box span {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .quote-box button {
         width: 100px;
         height: 40px;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .quote-box {
-        width: 800px;
+        width: 700px;
+        padding: 15px;
+        top: 63%;
+        left: 50%;
+    }
+
+    .quote-box h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 18px;
+        min-height: 70px;
+    }
+
+    .quote-box span {
+        font-size: 14px;
+    }
+
+    .quote-box button {
+        width: 110px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .quote-box {
+        width: 900px;
         padding: 15px;
         top: 50%;
         left: 50%;
@@ -231,16 +203,45 @@ body {
 
     .quote-box blockquote {
         font-size: 20px;
-        min-height: 90px;
+        min-height: 70px;
     }
 
     .quote-box span {
-        font-size: 14x;
+        font-size: 16px;
     }
 
     .quote-box button {
         width: 120px;
         height: 50px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .quote-box {
+        width: 1100px;
+        padding: 15px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .quote-box h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 25px;
+        min-height: 90px;
+    }
+
+    .quote-box span {
+        font-size: 16x;
+    }
+
+    .quote-box button {
+        width: 130px;
+        height: 50px;
+        font-size: 16px;
     }
 }
