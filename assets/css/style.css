@@ -99,7 +99,7 @@ body {
     color: #333;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 340px) {
     .quote-box {
         background: #fff;
         width: 300px;
